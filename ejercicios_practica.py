@@ -79,6 +79,26 @@ def ej3():
     numero_2 = float(input("ingrese el segundo numero: \n"))
 
     print("ingrese la operacion que desea realizar")
+  
+    operacion = input()
+    suma = numero_1 + numero_2
+    resta = numero_1 - numero_2
+    multiplicacion = numero_1 * numero_2
+    division = numero_1 / numero_2
+    potencia = numero_1 ** numero_2
+
+    if operacion == "+":
+      print("la suma es",suma)
+    elif operacion == "-":
+      print("la resta es:",resta) 
+    elif operacion == "*":
+      print("la multiplicacion es:",multiplicacion)
+    elif operacion == "/":
+      print("la division es:",division)
+    elif operacion == "**":
+      print(numero_1,"elevado a",numero_2,"es:",potencia)
+    else:
+      print("operacion invalida")
 
     
     '''
