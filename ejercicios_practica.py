@@ -16,6 +16,19 @@ __version__ = "1.1"
 
 def ej1():
     # Ejercicios de práctica con números
+    print("Ingrese dos numeros")
+    numero_1 = float(input())
+    numero_2 = float(input())
+
+    resta = numero_1 - numero_2
+    
+    if resta > 0:
+      print("El restulado es positivo")
+    elif resta < 0:
+      print("El resultado es negativo")
+    else:
+      print("El resultado es igual a cero")
+
 
     '''
     Realice un programa que solicite por consola 2 números
@@ -27,17 +40,47 @@ def ej1():
 def ej2():
 # Ejercicios de práctica con números
 
-  '''
-    Realice un programa que solicite el ingreso de tres números
-    enteros, y luego en cada caso informe si el número es par
-    o impar.
-    Para cada caso imprimir el resultado en pantalla.
+    print("Ingrese tres numero")
+    numero_1 = int(input())
+    numero_2 = int(input())
+    numero_3 = int(input())
+
+    division = numero_1 % 2
+    if division == 0:
+      print("numero par")
+    else:
+      print("numero impar")  
+  
+    division = numero_2 % 2
+    if division == 0:
+      print("numero par")
+    else:
+      print("numero impar")  
+
+    division = numero_3 % 2
+    if division == 0:
+      print("numero par")
+    else:
+      print("numero impar")  
+
+
+
+  
+    #Realice un programa que solicite el ingreso de tres números
+    #enteros, y luego en cada caso informe si el número es par
+    #o impar.
+    #Para cada caso imprimir el resultado en pantalla.
     
-  '''
 
 def ej3():
     # Ejercicios de práctica con números
 
+    numero_1 = float(input("Ingrese el primer numero: \n"))
+    numero_2 = float(input("ingrese el segundo numero: \n"))
+
+    print("ingrese la operacion que desea realizar")
+
+    
     '''
     Realice una calculadora, se ingresará por línea de comando dos números
     Luego se ingresará como tercera entrada al programa el símbolo de la operación
@@ -57,6 +100,25 @@ def ej3():
 def ej4():
     # Ejercicios de práctica con cadenas
     
+    print("ingrese tres palabras")
+    palabra_1 = str(input())
+    palabra_2 = str(input())
+    palabra_3 = str(input())
+    
+    print("ingrese la operacion que quiere realizar")
+    numero = int(input())
+
+    if numero == 1:
+      if (palabra_1 < palabra_2) and (palabra_2 < palabra_3):
+        print(palabra_1,palabra_2,palabra_3)
+      elif (palabra_2 < palabra_1) and (palabra_1 < palabra_3):
+        print(palabra_2,palabra_1,palabra_3)
+      else:
+        print(palabra)  
+    else:
+      print("cero")
+
+
     '''
     Realice un programa que solicite por consola 3 palabras cualesquiera
     Luego el programa debe consultar al usuario como quiere ordenar las palabras
@@ -86,9 +148,9 @@ def ej5():
     '''
 
 if __name__ == '__main__':
-    print("Ejercicios de práctica")
-    ej1()
+    #print("Ejercicios de práctica")
+    #ej1()
     #ej2()
     #ej3()
-    #ej4()
+    ej4()
     #ej5()
