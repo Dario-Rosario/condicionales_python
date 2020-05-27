@@ -186,6 +186,9 @@ def ej5():
     print("la temperatura menor es",min(temperatura_1,temperatura_2,temperatura_3))
     print("la temperatura promedio es",promedio)
 
+    # Inove: Perfecto que hayas aprovechado las funciones de "max" y "min" para
+    # el cálculo, esas y otras funciones las veremos la clase que viene
+    # junto con los métodos de bucles o loops, y listas.
 
     '''
     Realice un programa que solicite ingresar tres valores de temperatura
