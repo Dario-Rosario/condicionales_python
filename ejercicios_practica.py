@@ -129,15 +129,32 @@ def ej4():
     numero = int(input())
 
     if numero == 1:
-      if (palabra_1 < palabra_2) and (palabra_2 < palabra_3):
+      if (palabra_1 < palabra_2 < palabra_3):
+        print(palabra_3,palabra_2,palabra_1)
+      elif (palabra_1 < palabra_3 < palabra_2):
+        print(palabra_2,palabra_3,palabra_1)
+      elif (palabra_2 < palabra_1 < palabra_3):
+        print(palabra_3,palabra_1,palabra_2)
+      elif (palabra_2 < palabra_3 < palabra_1):
+        print(palabra_1,palabra_3,palabra_2)
+      elif (palabra_3 < palabra_1 < palabra_2):
+        print(palabra_2,palabra_1,palabra_3)    
+      elif (palabra_3 < palabra_2 < palabra_1):
         print(palabra_1,palabra_2,palabra_3)
-      elif (palabra_2 < palabra_1) and (palabra_1 < palabra_3):
+      
+    if numero == 2:
+      if len(palabra_1) <= len(palabra_2) <= len(palabra_3):
+        print(palabra_3,palabra_2,palabra_1)
+      elif len(palabra_1) <= len(palabra_3) <= len(palabra_2):
+        print(palabra_2,palabra_3,palabra_1)
+      elif len(palabra_2) <= len(palabra_1) <= len(palabra_3):
+        print(palabra_3,palabra_1,palabra_2)
+      elif len(palabra_2) <= len(palabra_3) <= len(palabra_1):
+        print(palabra_1,palabra_3,palabra_2)
+      elif len(palabra_3) <= len(palabra_1) <= len(palabra_2):
         print(palabra_2,palabra_1,palabra_3)
-      else:
-        print(palabra)  
-    else:
-      print("cero")
-
+      elif len(palabra_3) <= len(palabra_2) <= len(palabra_1):
+        print(palabra_1,palabra_2,palabra_3)
 
     '''
     Realice un programa que solicite por consola 3 palabras cualesquiera
@@ -155,7 +172,21 @@ def ej4():
 
 def ej5():
     # Ejercicios de práctica con números
-       
+    
+    print("Igrese el valor de las temperaturas de los ultimos tres dias")
+
+    temperatura_1 = float(input())
+    temperatura_2 = float(input())
+    temperatura_3 = float(input())
+
+    maximo = max(temperatura_1,temperatura_2,temperatura_3)
+    promedio = (temperatura_1 + temperatura_2 + temperatura_3) / 3
+
+    print("la temperatura mayor es",maximo)
+    print("la temperatura menor es",min(temperatura_1,temperatura_2,temperatura_3))
+    print("la temperatura promedio es",promedio)
+
+
     '''
     Realice un programa que solicite ingresar tres valores de temperatura
     De las temperaturas ingresadas por consola determinar:
@@ -172,5 +203,5 @@ if __name__ == '__main__':
     #ej1()
     #ej2()
     #ej3()
-    ej4()
-    #ej5()
+    #ej4()
+    ej5()
